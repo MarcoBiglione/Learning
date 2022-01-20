@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con el mouse</title>
+  </head>
+  <style>
+  input.botonAmarillo
+    {
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 50%;
+    }
+    input.botonRojo
+    {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 50%;
+    }
+    input.botonAzul
+    {
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 50%;
+    }
+    input.botonVerde
+    {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 50%;
+    }
+    input.botonNegro
+    {
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-style: outset;
+    border-color: grey;
+    border-radius: 50%;
+    }
+  </style>
+
+  <body>
+    <h1>DIBUJEMOS!</h1>
+    <canvas width="300" height="300" id="area_de_dibujo"></canvas><br>
+    <input type="button" class="botonRojo" name="rojo" id="botonRojo" />
+    <input type="button" class="botonAzul" name="azul" id="botonAzul" />
+    <input type="button" class="botonAmarillo" name="amarillo" id="botonAmarillo" />
+    <input type="button" class="botonNegro" name="negro" id="botonNegro" />
+    <input type="button" class="botonVerde" name="verde" id="botonVerde" /><br>
+    <p>Grosor del lapiz<br></p>
+    <input type="text" class="textoMedidas" id="grosorLapiz" />
+    <input type="button" class="botonMedidas" value="Cargar" id="botonGrosor" /><br>
+    <p>Elige el tamaño de tu hoja de dibujo:<br></p>
+    <input type="text" class="textoMedidas" id="widthCanvas" />
+    <input type="text" class="textoMedidas" id="heightCanvas" />
+    <input type="button" class="bottonMedidas" value="Cargar" id="botonMedidas" />
+    <p>Mueve el mouse mientras haces click para dibujar<br>
+      O mueve tu mouse si te gusta mas!
+    </p>
+    <script src="canvas3.js"></script>
+    <a href="canvas3.html"><input type="button" value="Limpiar" /></a>
+  </body>
+</html>
