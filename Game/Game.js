@@ -132,21 +132,20 @@ function dibujar()
     }
   }
   if(cerdo.cargaOK)
-  {
-    papel.drawImage(cerdo.imagen, cerdo.posX, cerdo.posY);
-  }
-  if(pollo.cargaOK)
-  {
-    for(var v=0; v < cantidad ; v++)
     {
-      var x = aleatorio (0, 7);
-      var y = aleatorio (0, 10);
-      var x = x * 60;
-      var y = y * 40;
-      papel.drawImage(pollo.imagen, x, y);
+      papel.drawImage(cerdo.imagen, cerdo.posX, cerdo.posY);
     }
-  }
-
+  if(pollo.cargaOK)
+    {
+      for(var v=0; v < cantidad ; v++)
+      {
+        var x = aleatorio (0, 7);
+        var y = aleatorio (0, 10);
+        var x = x * 60;
+        var y = y * 40;
+        papel.drawImage(pollo.imagen, x, y);
+      }
+    }
 }
 
 
